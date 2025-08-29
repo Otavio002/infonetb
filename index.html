@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameZone - Loja de Jogos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00ffcc;
+    }
+
+    header h1 {
+      color: #00ffcc;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #2a2a2a;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .container {
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .game-card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      width: 250px;
+      margin: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .game-info {
+      padding: 15px;
+    }
+
+    .game-info h3 {
+      margin-bottom: 10px;
+    }
+
+    .game-info p {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .buy-button {
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #00c7a2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+
+    footer p {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GameZone</h1>
+    <p>Sua loja digital de jogos favorita</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Categorias</a>
+    <a href="#">Lançamentos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="container">
+    <div class="game-card">
+      <img src="https://via.placeholder.com/250x140.png?text=Jogo+1" alt="Jogo 1">
+      <div class="game-info">
+        <h3>Cyber Strike</h3>
+        <p>Ação futurista em uma cidade dominada por IA.</p>
+        <button class="buy-button">Comprar - R$ 99,90</button>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://via.placeholder.com/250x140.png?text=Jogo+2" alt="Jogo 2">
+      <div class="game-info">
+        <h3>Fantasy Realms</h3>
+        <p>Explore reinos mágicos e batalhe contra dragões.</p>
+        <button class="buy-button">Comprar - R$ 129,90</button>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://via.placeholder.com/250x140.png?text=Jogo+3" alt="Jogo 3">
+      <div class="game-info">
+        <h3>RaceX Turbo</h3>
+        <p>Velocidade extrema nas pistas mais insanas.</p>
+        <button class="buy-button">Comprar - R$ 79,90</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GameZone. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
